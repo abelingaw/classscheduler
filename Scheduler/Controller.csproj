@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B18B32F1-9805-4B7D-ADEE-97486C302D21}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scheduler</RootNamespace>
+    <AssemblyName>Sample_Controller</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\My Project\VS 2010\INSTALLERS\SCHEDULER\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://www.microsoft.com</SupportUrl>
+    <ProductName>Sample Controller</ProductName>
+    <PublisherName>Aim™</PublisherName>
+    <SuiteName>Setup</SuiteName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>SchedulerMainDemo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Scheduler.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AE62FB0631DF9D89AF88043CE0C36216EBDB214A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Controller_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCon.cs" />
+    <Compile Include="clsSchedule.cs" />
+    <Compile Include="DBaseDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBaseDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBaseDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBaseDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Department.Designer.cs">
+      <DependentUpon>Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacultyAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacultyAE.Designer.cs">
+      <DependentUpon>frmFacultyAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacultyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacultyList.designer.cs">
+      <DependentUpon>frmFacultyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacultySchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacultySchedule.Designer.cs">
+      <DependentUpon>frmFacultySchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageSections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageSections.Designer.cs">
+      <DependentUpon>frmManageSections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoomAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomAE.Designer.cs">
+      <DependentUpon>frmRoomAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScheduler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScheduler.Designer.cs">
+      <DependentUpon>frmScheduler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSectionAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSectionAE.Designer.cs">
+      <DependentUpon>frmSectionAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Department.resx">
+      <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacultyAE.resx">
+      <DependentUpon>frmFacultyAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacultyList.resx">
+      <DependentUpon>frmFacultyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacultySchedule.resx">
+      <DependentUpon>frmFacultySchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageSections.resx">
+      <DependentUpon>frmManageSections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomAE.resx">
+      <DependentUpon>frmRoomAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScheduler.resx">
+      <DependentUpon>frmScheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSectionAE.resx">
+      <DependentUpon>frmSectionAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Controller_1_TemporaryKey.pfx" />
+    <None Include="Controller_TemporaryKey.pfx" />
+    <None Include="DBaseDataSet11.xsc">
+      <DependentUpon>DBaseDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBaseDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBaseDataSet11.xss">
+      <DependentUpon>DBaseDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet2.xsc">
+      <DependentUpon>DBaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBaseDataSet2.xss">
+      <DependentUpon>DBaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet21.xsc">
+      <DependentUpon>DBaseDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBaseDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBaseDataSet21.xss">
+      <DependentUpon>DBaseDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet3.xsc">
+      <DependentUpon>DBaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBaseDataSet3.xss">
+      <DependentUpon>DBaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet4.xsc">
+      <DependentUpon>DBaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBaseDataSet4.xss">
+      <DependentUpon>DBaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet5.xsc">
+      <DependentUpon>DBaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DBaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBaseDataSet5.xss">
+      <DependentUpon>DBaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\scheduling.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DBase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DBase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DBase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Education.ico" />
+    <Content Include="SchedulerMainDemo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
